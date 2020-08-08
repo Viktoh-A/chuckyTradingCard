@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog Trading App</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px;
+            background: url(v3.jpg)no-repeat top;
+            background-size: 450px 450px
+        }
+        .Dm{
+            padding: 180px
+        }
+        header{
+            color: white;
+            font-size: 14pt;
+            font-weight: bolder;
+            padding:10px;
+            background: transparent;
+            transition: 0.5s
+        }
+        header:hover{
+            font-size: 16pt;
+            transition: 0.5s;
+        }
+        .body{
+            background: white;
+            padding:5px 20px 50px 20px;
+            margin: 0px;
+        }
+        ul{
+            display: flex;
+            border-radius: 5px;
+            
+            justify-content: space-between;
+            margin: auto;
+            padding: 0px;
+        }
+        li{
+            flex-direction: row;
+            padding: 10px;
+            list-style-type: none;
+            font-weight: bolder;
+            text-align: left;
+           
+        }
+        li:first-child{
+            border-right: solid lightgrey 2pt;
+        }
+        li:last-child{
+            border-left: solid lightgrey 2pt ;
+        }
+        l{
+            font-size: smaller;
+            color:lightgray
+        }
+        .btn{
+            border-top: solid lightgrey 2pt;
+            color:steelblue;
+            background: white;
+            padding: 5px;
+            font-size: 14pt;
+            transition: ease 0.5s;
+            text-align: right;
+            position: sticky;
+            bottom: 0px;
+        }
+        .btn:hover{
+            border-top: solid lightgrey 2pt;
+            color:rgb(0, 106, 192);
+            font-size: 16pt;
+            transition: ease 0.5s;
+            
+        }
+        img{
+            width:40%;
+            border-radius: 50%;
+            display:none;
+        } 
+        @media  screen and (min-width: 500px){
+            header{
+                background: rgba(0, 0, 0, 0.9);
+                color: white;
+            }
+            img{
+            width:70%;
+            border-radius: 50%;
+            display:block;
+        }
+            body{
+                background:unset
+                
+            }
+            .Dm{
+                padding: 5px;
+            }
+            .flexer{
+                display: flex;
+                width: 80%;
+                margin:auto;
+    
+            }
+            .body{
+            box-shadow: 0px 0px 4px lightgray;
+            }
+         } 
+    </style>
+</head>
+<body>
+    <header>
+        <i>
+            &larr;
+        </i>
+    </header>
+    <div class="flexer">
+    <div class="Dm">
+        <img src="v3.jpg">
+    </div>
+    <div class="body">
+        <h1>Chuky</h1>
+        <ul>
+            <li><l>BREED</l><br>Shiba Inu</li>
+            <li><l>AGE</l><br>3 Months</li>
+            <li><l>SIZE</l><br>Medium</li>
+        </ul>
+        <br>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit vitae qui quidem, molestiae rem blanditiis neque. Nemo non quidem doloribus cum rem aliquid blanditiis nesciunt nihil, enim dolores tenetur neque!
+        </p>
+        
+    </div>
+</div>
+    <div class="btn">
+        <p>
+            Apply for Adoption &rarr;
+        </p>
+    </div>
+    
+</body>
+</html>
